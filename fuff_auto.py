@@ -32,10 +32,10 @@ def run_ffuf(target, wordlist, ffuf_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run ffuf to fuzz a target URL.')
     parser.add_argument('target', help='The target URL to fuzz')
-    parser.add_argument('--ffuf_path', default='C:\\Users\\Yash\\Desktop\\fuff\\ffuf.exe', help='The path to the ffuf executable')
+    parser.add_argument('--ffuf_path', default='Your fuff exe file path', help='The path to the ffuf executable')
     args = parser.parse_args()
 
     target = args.target
-    wordlist = 'common.txt'
+    wordlist = 'wordlist file path. E.g. - \common.txt'
     ffuf_path = args.ffuf_path
     run_ffuf(target, wordlist, ffuf_path)
